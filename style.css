@@ -192,8 +192,6 @@ a {
     font-weight: bold;
 }
 
-
-
 label {
     font-size: 14px;
     font-weight: 600;
@@ -201,13 +199,14 @@ label {
     display: block;
     margin-block-end: 5px;
 }
+
 select {
     display: block;
     border: 1px solid rgb(204, 202, 202);
 }
 
 option {
-   color: rgb(204, 202, 202);
+   color: rgb(94, 93, 93);
 }
 
 input {
@@ -236,18 +235,27 @@ select, input:not(.activity-input>select,
 /* Media Queries */
 
 @media (max-width: 500px) 
-{ 
-
-
+{  
     
+    /* body { 
+        width: 600px; 
+        min-width: 100%;  
+    } */
+
     main { 
         height: 100%; 
+        min-width: 100%;
         flex-direction: column;
-        width: 100%;
+        width: fit-content;
     }
-
-    .first-card {
+    
+    .first-card { 
+        width: 90%;
         margin-block-end: 30px;
+    }
+   
+    .second-card {  
+        width: 90%;
     }
 
     .second-card> form {
